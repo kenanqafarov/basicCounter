@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #6971fd;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  > .topPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    > .left {
+      > input {
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        width: 200px;
+        border-radius: 10px;
+        transition: 0.5s ease;
+      }
+      > input:focus {
+        outline: 2px solid #4e56f5;
+        width: 230px;
+      }
+    }
+    > .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      > button {
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        background-color: #4e56f5;
+        transition: 0.6s ease;
+      }
+      > button:hover {
+        box-shadow: 1px 4px 20px black;
+      }
+    }
+  }
+  > .content {
+    height: 200px;
+    width: 460px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #868bfc;
+    border-radius: 90px;
+    > .numberContainer {
+      > .number {
+        color: #6970f8;
+        border-radius: 100px;
+        line-height: 198px;
+        text-align: center;
+        width: 200px;
+        background-color: white;
+        font-size: 74px;
+      }
+    }
+    > button {
+      border: none;
+      background: none;
+      color: white;
+      font-weight: 400;
+      font-size: 94px;
+      transition: 0.6s ease;
+    }
+    > button:hover,
+    button:active {
+      scale: 1.1;
+      cursor: pointer;
+    }
+  }
+}
+
+/* 
+@keyframes numberUp {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes numberDown {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+} */
